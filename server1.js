@@ -7,7 +7,7 @@ app.use(express.json());
 app.listen(process.env.PORT || 4000)
 const mongodb = require("mongodb");
 const jwt = require("jsonwebtoken");
-const { json } = require("express");
+
 const URL = "mongodb+srv://dbuser:error404@cluster0.phwbo.mongodb.net/user?retryWrites=true&w=majority"
 const DB = "user"
 app.post('/register',async (req,res)=>{
